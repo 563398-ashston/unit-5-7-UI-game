@@ -29,10 +29,10 @@ public class MenuManager : MonoBehaviour
         }
 
 
-        musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0.5f);
+        musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 1f);
         musicSlider.onValueChanged.AddListener(SetMusicVolume);
 
-        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0.5f);
+        sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 1f);
         sfxSlider.onValueChanged.AddListener(SetSFXVolume);
 
         muteMusicButton.isOn = AudioManager.instance.musicMute;
